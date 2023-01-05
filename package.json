@@ -1,0 +1,27 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrinaNikolaeva0208/CRUD-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrinaNikolaeva0208/CRUD-API/issues"
+  },
+  "homepage": "https://github.com/IrinaNikolaeva0208/CRUD-API#readme",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
