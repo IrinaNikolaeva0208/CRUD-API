@@ -1,7 +1,7 @@
+import routes from "../routes/routes";
 import * as http from "http";
 import * as dotenv from "dotenv";
 import userObject from "../types/userObject";
-import routes from "../routes/routes";
 dotenv.config({ path: __dirname+'/.env' });
 
 const PORT = process.env.PORT;

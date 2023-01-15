@@ -26,8 +26,7 @@ export default function (body: userObject, method: string, url: string): Message
         }
     }
     else if (method == "POST" && url == "/api/users") {
-        const user: User = {...body, id: uuid.v4().toString()}
-        //console.log(body);
+        const user: User = {id: uuid.v4().toString(), ...body}
         result.content = usersDB.createUser(user);
         result.statusCode = 201;
     }

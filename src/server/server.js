@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
+var routes_1 = require("../routes/routes");
 var http = require("http");
 var dotenv = require("dotenv");
-var routes_1 = require("../routes/routes");
 dotenv.config({ path: __dirname + '/.env' });
 var PORT = process.env.PORT;
 var server = http.createServer(function (request, response) {

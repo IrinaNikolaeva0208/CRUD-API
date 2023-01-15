@@ -35,8 +35,7 @@ function default_1(body, method, url) {
         }
     }
     else if (method == "POST" && url == "/api/users") {
-        var user = __assign(__assign({}, body), { id: uuid.v4().toString() });
-        //console.log(body);
+        var user = __assign({ id: uuid.v4().toString() }, body);
         result.content = usersDB.createUser(user);
         result.statusCode = 201;
     }
