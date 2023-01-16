@@ -17,6 +17,9 @@ const server = http.createServer((request, response) => {
         request.on("data", (chunk) => {
             reqStr += chunk.toString();
         });
+
+        response.setHeader('Content-Type', 'application/json');
+
         request.on("end", () => {
             try {
                 if(request.method == "POST" || request.method == "PUT")
